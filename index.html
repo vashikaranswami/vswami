@@ -47,6 +47,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+     <style>
+    /* Style for the music player */
+    #musicPlayer {
+      display: flex;
+      align-items: center;
+    }
+
+    audio {
+      margin-right: 10px;
+    }
+  </style>
  
  
    <!--
@@ -111,6 +122,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- <span><a href="images/report.pdf" target="blank"  style="color: #fff;">  </span></a> -->
                         </div>
                     </div>
+                    <div class="col-sm-6 top-l" id="musicPlayer">
+                        <audio controls autoplay>
+                            <source src="Ram_ayenge.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                          </audio>
+                    </div>
+
 
                     
 
