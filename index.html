@@ -2126,6 +2126,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    
 <script type="text/javascript">
 
+    var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "./audio/rain.m4a"
+
+
+
     // Create an audio element
 var audioElement = new Audio();
 
@@ -2136,7 +2142,9 @@ audioElement.src = 'Ram_ayenge.mp3'; // Replace this with the path to your music
 audioElement.loop = true;
 
 // Play the music
-audioElement.play();
+document.body.addEventListener("mousemove", function () {
+    audioElement.play();
+})
 
 // var audioElement = document.createElement('audio');
 // var filePath = 'YourSong.ogg'; // Replace this with your actual file path
