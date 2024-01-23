@@ -2125,12 +2125,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
 <script type="text/javascript">
+
 var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', 'YourSong.ogg');
-audioElement.load()
-audioElement.addEventListener("load", function() { 
-  audioElement.play(); 
-}, true);
+var filePath = 'YourSong.ogg'; // Replace this with your actual file path
+audioElement.setAttribute('src', filePath);
+
+console.log('Attempting to load audio file from:', filePath);
+
+audioElement.addEventListener('canplay', function() {
+  console.log('Audio can play. Attempting to play...');
+  audioElement.play();
+}, false);
+
+audioElement.load();
 </script>
 
 </body>
