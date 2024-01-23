@@ -2126,18 +2126,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    
 <script type="text/javascript">
 
-var audioElement = document.createElement('audio');
-var filePath = 'YourSong.ogg'; // Replace this with your actual file path
-audioElement.setAttribute('src', filePath);
+    // Create an audio element
+var audioElement = new Audio();
 
-console.log('Attempting to load audio file from:', filePath);
+// Set the source of the audio file
+audioElement.src = 'Ram_ayenge.mp3'; // Replace this with the path to your music file
 
-audioElement.addEventListener('canplay', function() {
-  console.log('Audio can play. Attempting to play...');
-  audioElement.play();
-}, false);
+// Enable loop to play the music continuously
+audioElement.loop = true;
 
-audioElement.load();
+// Play the music
+audioElement.play();
+
+// var audioElement = document.createElement('audio');
+// var filePath = 'YourSong.ogg'; // Replace this with your actual file path
+// audioElement.setAttribute('src', filePath);
+
+// console.log('Attempting to load audio file from:', filePath);
+
+// audioElement.addEventListener('canplay', function() {
+//   console.log('Audio can play. Attempting to play...');
+//   audioElement.play();
+// }, false);
+
+// audioElement.load();
 </script>
 
 </body>
