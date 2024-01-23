@@ -2120,31 +2120,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     </ul>
    </div>
-
+<audio id="my_audio" src="Ram_ayenge.mp3" loop="loop"></audio>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
 <script type="text/javascript">
 
-    var audio = document.createElement("AUDIO")
-document.body.appendChild(audio);
-audio.src = "Ram_ayenge.mp3"
-
-
-
-    // Create an audio element
-var audioElement = new Audio();
-
-// Set the source of the audio file
-audioElement.src = 'Ram_ayenge.mp3'; // Replace this with the path to your music file
-
-// Enable loop to play the music continuously
-audioElement.loop = true;
-
-// Play the music
-document.body.addEventListener("mousemove", function () {
-    audio.play();
-})
+$(document).ready(function() {
+    $("#my_audio").get(0).play();
+});
 
 
 </script>
